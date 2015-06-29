@@ -1,0 +1,18 @@
+# IDE files #
+#################
+*.esproj
+.idea/*
+/.vimrc.local
+/.vimrc.*.local
+/.tern-project
+/.ctrlpignore
+/tags
+
+
+composer.lock
+# Project files #
+#################
+/vendor/*
+/vendor/**.git
+/vendor/**.gitignore
+/vendor/**.gitmodules

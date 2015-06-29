@@ -1,0 +1,30 @@
+{
+    "name": "lightmaker/complexify-bundle",
+    "description": "A simple Symfony2 bundle for Michael Crumley's PHP port of Dan Palmer's jquery.complexify.js",
+    "keywords": ["symfony", "symfony2", "bundle", "complexify", "password"],
+    "homepage": "https://github.com/LightmakerCanada/ComplexifyBundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Greg Holland",
+            "email": "gholland85@gmail.com",
+            "homepage": "https://github.com/gregholland"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/validator": "^2.3.20",
+        "mcrumley/php-complexify": "0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-0": { "Lightmaker\\ComplexifyBundle": "" }
+    },
+    "autoload-dev": {
+        "psr-0": { "Lightmaker\\ComplexifyBundle\\Tests": "" }
+    },
+    "target-dir": "Lightmaker/ComplexifyBundle"
+}
