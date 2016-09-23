@@ -8,6 +8,9 @@ use Symfony\Component\Validator\Constraint;
 /**
  * Class Complexify
  *
+ * @Annotation
+ * @Target({"PROPERTY", "METHOD", "ANNOTATION"})
+ *
  * @package Lightmaker\ComplexifyBundle\Validator\Contraints
  */
 class Complexify extends Constraint

@@ -37,3 +37,17 @@ You can use the `Lightmaker\ComplexifyBundle\Validator\Constraints\Complexify` c
 - bannedPasswords: An array of banned passwords (Default: empty array)
 - banMode: strict == don't allow substrings of banned passwords, loose == only ban exact matches (default: strict)
 - encoding: (default: 'UTF-8')
+
+The easiest way of adding a constraint to one of your entity classes is by using an annotation:
+
+```php
+    /**
+     * Plain password. Used for model validation. Must not be persisted.
+     *
+     * @Complexify(
+     *     message="This password is not complex enough."
+     * )
+     * @var string
+     */
+    protected $plainPassword;
+```
